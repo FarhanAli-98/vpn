@@ -38,7 +38,7 @@ https://youtube.com/playlist?list=PL8kbUJtS6hyal7Uw7wTeYmv7yiNPH5kOq
 </ul>
 
 <b>Note:</b> This Project is a built on top of NizVpn Flutter (Show some love to his efforts).
-<br>Github Link: https://github.com/nizwar/nizvpn
+<br>Github Link: https://github.com/FarhanAli-98/vpn
   
 <b>Watch Full Playlist on Youtube:</b>
   https://youtube.com/playlist?list=PL8kbUJtS6hyal7Uw7wTeYmv7yiNPH5kOq
