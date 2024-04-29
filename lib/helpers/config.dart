@@ -18,8 +18,8 @@ class Config {
         minimumFetchInterval: const Duration(minutes: 30)));
 
     await _config.setDefaults(_defaultValues);
-    await _config.fetchAndActivate();
-    log('Remote Config Data: ${_config.getBool('show_ads')}');
+    // await _config.fetchAndActivate();
+    // log('Remote Config Data: ${_config.getBool('show_ads')}');
 
     _config.onConfigUpdated.listen((event) async {
       await _config.activate();
@@ -27,12 +27,12 @@ class Config {
     });
   }
 
-  static bool get _showAd => _config.getBool('show_ads');
+  static bool get _showAd => false;
 
   //ad ids
   static String get nativeAd => _config.getString('native_ad');
   static String get interstitialAd => _config.getString('interstitial_ad');
   static String get rewardedAd => _config.getString('rewarded_ad');
 
-  static bool get hideAds => !_showAd;
+  static bool get hideAds => true;
 }

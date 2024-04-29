@@ -38,22 +38,24 @@ class HomeScreen extends StatelessWidget {
           IconButton(
               onPressed: () {
                 //ad dialog
-
-                if (Config.hideAds) {
-                  Get.changeThemeMode(
-                      Pref.isDarkMode ? ThemeMode.light : ThemeMode.dark);
-                  Pref.isDarkMode = !Pref.isDarkMode;
-                  return;
-                }
-
-                Get.dialog(WatchAdDialog(onComplete: () {
-                  //watch ad to gain reward
-                  AdHelper.showRewardedAd(onComplete: () {
-                    Get.changeThemeMode(
+ Get.changeThemeMode(
                         Pref.isDarkMode ? ThemeMode.light : ThemeMode.dark);
                     Pref.isDarkMode = !Pref.isDarkMode;
-                  });
-                }));
+
+
+                // if (Config.hideAds) {
+                //   Get.changeThemeMode(
+                //       Pref.isDarkMode ? ThemeMode.light : ThemeMode.dark);
+                //   Pref.isDarkMode = !Pref.isDarkMode;
+                //   return;
+                // }
+
+                // Get.dialog(WatchAdDialog(onComplete: () {
+                //   //watch ad to gain reward
+                //   AdHelper.showRewardedAd(onComplete: () {
+                   
+                //   });
+                // }));
               },
               icon: Icon(
                 Icons.brightness_medium,
